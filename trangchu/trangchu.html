@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="../assets/css-bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome-free-6.2.1-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <script src="../assets/js-bootstrap/bootstrap.min.js" defer></script>
+    <script src="./trangchu.js" defer></script>
+    <script src="../assets/js/header.js" defer></script>
+  </head>
+
+  <body>
+    <header class="container-xl-fluid container-fluid bg-black">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../trangchu/trangchu.html">CTShop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars menu-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../trangchu/trangchu.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../lienhe/contact.html">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../dangnhap/login.html">Đăng nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../dangky/reg.html">Đăng ký</a>
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+
+            <form class="d-flex search-form">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Search"
+                oninput="handleSearch()"
+              />
+              <button class="btn btn-outline-light btn-search" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--  khung chua san pham tim kiem -->
+      <div class="search-container">
+        <ul class="search-list"></ul>
+      </div>
+      <!-- lop phu -->
+      <div class="search-overplay"></div>
+    </header>
+    <main class="container-sm container-fluid">
+      <!-- slider -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner img-center">
+          <div class="carousel-item active">
+            <a href="#iphone">
+              <img
+                src="../assets/images/iphone14.png"
+                class="d-block slider-img"
+                alt="..."
+              />
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Iphone</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#mac">
+              <img
+                src="../assets/images/macbook.jpg"
+                class="d-block slider-img"
+                alt="..."
+              />
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Macbook</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#watch">
+              <img
+                src="../assets/images/Applewatch.jpg"
+                class="d-block slider-img"
+                alt="..."
+              />
+            </a>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Apple watch</h5>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div id="about">
+        <div class="about-item" id="iphone">
+          <h1 class="about-header">IPHONE</h1>
+          <div class="row about-contain">
+            <div class="col about-img-box">
+              <img
+                src="../assets/images/iphone14-buy.png"
+                alt=""
+                class="about-img about-img-left"
+              />
+            </div>
+            <div class="col about-content">
+              <div class="row">
+                <h2 class="h2-lagre">Giá: 20.990.000 ₫</h2>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Kích thước:</span>
+                <span class="col col-xxl-3">6.1 inches</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Màn hình:</span>
+                <span class="col col-xxl-3">OLED</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Camera:</span>
+                <span class="col col-xxl-3"
+                  >Góc rộng: 12MP, Siêu rộng: 12MP</span
+                >
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Ram:</span>
+                <span class="col col-xxl-3">6 GB</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Pin:</span>
+                <span class="col col-xxl-3">3,729mAh</span>
+              </div>
+              <div class="row mt-16 about-select">
+                <div class="col-xxl-3 col-12">
+                  <div class="about-color">
+                    <button class="btn dropdown-button" type="button">
+                      <span>Màu</span>
+                      <i
+                        class="fa-sharp fa-solid fa-caret-down dropdown-button-icon"
+                      ></i>
+                    </button>
+                    <ul class="about-option">
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#000000"
+                      >
+                        Đen
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#A50011"
+                      >
+                        Đỏ
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="white"
+                      >
+                        Trắng
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#6041da"
+                      >
+                        Tím
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#334b75"
+                      >
+                        Xanh
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-12">
+                  <button class="btn about-buy">
+                    Mua ngay
+                    <i class="fa-solid fa-arrow-right about-buy-icon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-item bg-white" id="mac">
+          <h1 class="about-header font-black">MACBOOK</h1>
+          <div class="row about-contain-white">
+            <div class="col about-content-left font-black">
+              <div class="row">
+                <h2 class="h2-lagre">Giá: 41.990.000 ₫</h2>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Kích thước:</span>
+                <span class="col-xxl-3 col">14.2 inches</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">SSD:</span>
+                <span class="col-xxl-3 col">512 GB</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Ram:</span>
+                <span class="col-xxl-3 col">16 GB</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">CPU:</span>
+                <span class="col-xxl-3 col">M1 Pro/M1 Max</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Card đồ họa:</span>
+                <span class="col-xxl-3 col">14 nhân GPU</span>
+              </div>
+              <div class="row mt-16 about-select">
+                <div class="col-xxl-3 col-12">
+                  <div class="about-color">
+                    <button
+                      class="btn dropdown-button border-black font-black"
+                      type="button"
+                    >
+                      <span>Màu</span>
+                      <i
+                        class="fa-sharp fa-solid fa-caret-down dropdown-button-icon"
+                      ></i>
+                    </button>
+                    <ul class="about-option-white">
+                      <li
+                        class="option-item-white"
+                        onclick="changeColor(this)"
+                        value="#7d7d7d"
+                      >
+                        Xám
+                      </li>
+                      <li
+                        class="option-item-white"
+                        onclick="changeColor(this)"
+                        value="#aaa9ad"
+                      >
+                        Bạc
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-12">
+                  <button class="btn about-buy-white">
+                    Mua ngay
+                    <i class="fa-solid fa-arrow-right about-buy-icon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col about-img-box">
+              <img
+                src="../assets/images/macbook-buy.png"
+                alt=""
+                class="about-img about-img-right"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="about-item" id="watch">
+          <h1 class="about-header">APPLE WATCH</h1>
+          <div class="row about-contain">
+            <div class="col about-img-box">
+              <img
+                src="../assets/images/applewatch-buy.png"
+                alt=""
+                class="about-img about-img-left applewatch"
+              />
+            </div>
+            <div class="col about-content">
+              <div class="row">
+                <h2 class="h2-short">Giá: 6.790.000 ₫</h2>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Kích thước:</span>
+                <span class="col col-xxl-3">1.78 inches</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Màn hình:</span>
+                <span class="col col-xxl-3">OLED</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Chip:</span>
+                <span class="col col-xxl-3">Apple S5</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Bộ nhớ:</span>
+                <span class="col col-xxl-3">32 GB</span>
+              </div>
+              <div class="row content-item">
+                <span class="col-xxl-3 col-6 col-md-6">Pin:</span>
+                <span class="col col-xxl-3">1 ngày</span>
+              </div>
+              <div class="row mt-16 about-select">
+                <div class="col-xxl-3 col-12">
+                  <div class="about-color">
+                    <button class="btn dropdown-button" type="button">
+                      <span>Màu</span>
+                      <i
+                        class="fa-sharp fa-solid fa-caret-down dropdown-button-icon"
+                      ></i>
+                    </button>
+                    <ul class="about-option">
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#000000"
+                      >
+                        Đen
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="white"
+                      >
+                        Trắng
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#E9CC0B"
+                      >
+                        Vàng
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#8C8C76"
+                      >
+                        Xám
+                      </li>
+                      <li
+                        class="option-item"
+                        onclick="changeColor(this)"
+                        value="#FF5964"
+                      >
+                        Hồng
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xxl-3 col-12">
+                  <button class="btn about-buy">
+                    Mua ngay
+                    <i class="fa-solid fa-arrow-right about-buy-icon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Bản quyền thuộc về nhóm 6</span>
+    </footer>
+  </body>
+</html>

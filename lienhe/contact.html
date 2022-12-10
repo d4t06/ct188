@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Liên Hệ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css-bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome-free-6.2.1-web/css/all.css"
+    />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/form.css" />
+  </head>
+  <body>
+    <header class="container-xl-fluid container-fluid bg-black">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../trangchu/trangchu.html">CTShop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars menu-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../trangchu/trangchu.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../lienhe/contact.html">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../dangnhap/login.html">Đăng nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../dangky/reg.html">Đăng ký</a>
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+
+            <form class="d-flex search-form">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Search"
+                oninput="handleSearch()"
+              />
+              <button class="btn btn-outline-light btn-search" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--  khung chua san pham tim kiem -->
+      <div class="search-container">
+        <ul class="search-list"></ul>
+      </div>
+      <!-- lop phu -->
+      <div class="search-overplay"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="form-container">
+          <div class="form-inner">
+            <form id="contact" action="" method="get">
+              <h3>Liên Hệ Nhanh</h3>
+              <h4>
+                Liên hệ với chúng tôi ngay hôm nay, bạn sẽ được phản hồi trong
+                24h!
+              </h4>
+              <div class="field">
+                <input
+                  type="text"
+                  id="hoten"
+                  name="hoten"
+                  placeholder="Nhập Họ Tên"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input
+                  id="ymail"
+                  name="ymail"
+                  placeholder="Email"
+                  type="email"
+                  tabindex="2"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input
+                  id="ytel"
+                  name="ytel"
+                  placeholder="Số điện thoại"
+                  type="tel"
+                  tabindex="3"
+                  required
+                />
+              </div>
+              <div class="field">
+                <textarea placeholder="Ý kiến của bạn..." required></textarea>
+              </div>
+
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Gửi" onclick="checkcontact()" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Bản quyền thuộc về nhóm 6</span>
+    </footer>
+  </body>
+  <script src="./ct.js"></script>
+  <script src="../assets/js-bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/js/header.js"></script>
+</html>

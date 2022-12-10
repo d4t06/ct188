@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Đăng Ký</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/form.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="title-text">
+          <div class="title signup">Đăng Ký</div>
+        </div>
+        <div class="form-container">
+          <div class="form-inner">
+            <form
+              action="../dangnhap/login.html"
+              class="signup"
+              onsubmit="return checkdk()"
+              autocomplete="off"
+            >
+              <div class="field">
+                <input
+                  type="text"
+                  id="hoten"
+                  name="hoten"
+                  placeholder="Nhập Họ Tên"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Nhập Email"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Nhập Mật Khẩu"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  id="password1"
+                  name="password1"
+                  placeholder="Nhập Lại Mật Khẩu"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Đăng Ký" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>Bản quyền thuộc về nhóm 6</span>
+    </footer>
+    <script src="reg.js"></script>
+  </body>
+</html>

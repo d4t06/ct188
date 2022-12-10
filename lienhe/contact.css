@@ -1,0 +1,10 @@
+.container {
+  margin-top: 80px;
+}
+form h3 {
+  text-align: center;
+}
+form h4 {
+  text-align: justify;
+  font-size: 1.2rem;
+}

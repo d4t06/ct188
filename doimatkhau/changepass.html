@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Đổi Mật Khẩu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="changepass.css" />
+    <link rel="stylesheet" href="../assets/css-bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/fontawesome-free-6.2.1-web/css/all.css"
+    />
+  </head>
+
+  <body>
+    <header class="container-xl-fluid container-fluid bg-black">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../trangchu/trangchu.html">CTShop</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars menu-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../trangchu/trangchu.html"
+                  >Trang chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../lienhe/contact.html">Liên hệ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../dangnhap/login.html">Đăng nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../dangky/reg.html">Đăng ký</a>
+              </li>
+              <li class="nav-item"></li>
+            </ul>
+
+            <form class="d-flex search-form">
+              <input
+                class="form-control me-2 search-bar"
+                type="search"
+                placeholder="Tìm kiếm..."
+                aria-label="Search"
+                oninput="handleSearch()"
+              />
+              <button class="btn btn-outline-light btn-search" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--  khung chua san pham tim kiem -->
+      <div class="search-container">
+        <ul class="search-list"></ul>
+      </div>
+      <!-- lop phu -->
+      <div class="search-overplay"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="title-text">
+          <div class="title signup">Đổi Mật Khẩu</div>
+        </div>
+        <div class="form-container">
+          <div class="form-inner">
+            <form action="#" class="signup">
+              <div class="field">
+                <input
+                  type="password"
+                  id="passwordlast"
+                  name="passwordlast"
+                  placeholder="Nhập Mật Khẩu Cũ"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Nhập Mật Khẩu"
+                  required
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  id="password1"
+                  name="password1"
+                  placeholder="Nhập Lại Mật Khẩu"
+                  required
+                />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input
+                  type="submit"
+                  value=" Đổi Mật Khẩu"
+                  onclick="checkChange()"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Bản quyền thuộc về nhóm 6</span>
+    </footer>
+  </body>
+  <script src="changepass.js"></script>
+  <script src="../assets/js/header.js"></script>
+  <script src="../assets/js-bootstrap/bootstrap.min.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>Đăng Nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-text">
+        <div class="title login">Đăng Nhập</div>
+      </div>
+      <div class="form-container">
+        <div class="form-inner">
+          <form action="#" class="login">
+            <div class="field">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email: vidu@gmail.com"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Mật Khẩu: 8-20 ký tự"
+                required
+              />
+            </div>
+            <div class="pass-link">
+              <a href="../quenmatkhau/forgot.html">Quên Mật Khẩu?</a>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Đăng Nhập" onclick="checkdn()" />
+            </div>
+            <div class="signup-link">
+              Chưa Có Tài Khoản? <a href="../dangky/reg.html"> Đăng Ký Ngay</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>Bản quyền thuộc về nhóm 6</span>
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>
